@@ -3,22 +3,22 @@ html, body {
  height: 100%;
  position: relative;
 }
- 
+
 body {
  background: #eee;
  margin: 0;
 }
- 
+
 .wrapper {
  width: 320px;
  height: 220px;
- /* we center the button container horizontally and vertically */
+ /* centrado en pantalla de PC */
  position: absolute;
  top: 50%;
  left: 50%;
  transform: translate(-50%, -50%);
 }
- 
+
 .btn {
  display: block;
  width: 100px;
@@ -38,33 +38,33 @@ body {
  text-transform: uppercase;
  cursor: pointer;
  border-top: 1px solid #222;
-/* avoid selection */
+/* Para que en dispositivos moviles no seleccione las teclas */
 -moz-user-select:none;
 -ms-user-select:none;
 -webkit-user-select:none;
 /* avoid selection */
 }
- 
+
 .btn-up {
  top: 0;
  left: 110px;
 }
- 
+
 .btn-left {
  top: 114px;
  left: 0;
 }
- 
+
 .btn-down {
  top: 114px;
  left: 110px;
 }
- 
+
 .btn-right {
  right: 0;
  top: 114px;
 }
- 
+
 .btn.is-active {
  color: #888;
  background: #222;
@@ -73,4 +73,3 @@ body {
    0 0 3px #333;
  margin-top: 4px;
 }
-
