@@ -44,5 +44,50 @@ $(function () {
    socket.emit('stop');
    isPressed = false;
  });
+ 
+
+/* Only touch */
+ 
+ $( "#ButtonW" ).bind('touchstart', function() {
+  socket.emit('move', 'up');
+     ui.up.addClass(activeClass);
+});
+ 
+ $( "#ButtonW" ).bind('touchend', function() {
+  ui.all.removeClass(activeClass);
+   socket.emit('stop');
+});
+
+ $( "#ButtonA" ).bind('touchstart', function() {
+  socket.emit('move', 'left');
+     ui.left.addClass(activeClass);
+});
+ 
+ $( "#ButtonA" ).bind('touchend', function() {
+  ui.all.removeClass(activeClass);
+   socket.emit('stop');
+});
+
+ $( "#ButtonS" ).bind('touchstart', function() {
+  socket.emit('move', 'down');
+     ui.down.addClass(activeClass);
+});
+ 
+ $( "#ButtonS" ).bind('touchend', function() {
+  ui.all.removeClass(activeClass);
+   socket.emit('stop');
+});
+
+ $( "#ButtonD" ).bind('touchstart', function() {
+  socket.emit('move', 'right');
+     ui.right.addClass(activeClass);
+});
+ 
+ $( "#ButtonD" ).bind('touchend', function() {
+  ui.all.removeClass(activeClass);
+   socket.emit('stop');
+});
+/* Only touch */
+
 });
 

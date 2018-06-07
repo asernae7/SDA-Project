@@ -113,6 +113,7 @@ io.sockets.on('connection', function(socket) {
  //we listen to the stop signal
  socket.on('stop', function(dir){
    tank.stop();
+   console.log('stop');
  });
 });
  

@@ -38,6 +38,11 @@ body {
  text-transform: uppercase;
  cursor: pointer;
  border-top: 1px solid #222;
+/* avoid selection */
+-moz-user-select:none;
+-ms-user-select:none;
+-webkit-user-select:none;
+/* avoid selection */
 }
  
 .btn-up {
